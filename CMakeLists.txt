@@ -11,7 +11,7 @@ find_package(dlib REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS} ${dlib_INCLUDE_DIRS})
 
 # Add executable
-add_executable(FaceRecognition src/main.cpp)
+add_executable(FaceRecognition src/faceRecog.cpp)
 
 # Link libraries
 target_link_libraries(FaceRecognition ${OpenCV_LIBS} dlib::dlib)
